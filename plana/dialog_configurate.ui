@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogPeriod</class>
+ <widget class="QDialog" name="DialogPeriod">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>398</width>
+    <height>280</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Настройка периода</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayoutPeriod">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="NameHeadLabel">
+         <property name="text">
+          <string>Имя:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="NameLabel">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="BeginHeadLabel">
+         <property name="text">
+          <string>Дата старта:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="BeginDateLabel">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="BeginTimeLabel">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="DeadlineHeadLabel">
+         <property name="text">
+          <string>Дата дедлайна:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="DeadlineDateLabel">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="DeadlineTimeLabel">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLabel" name="DifferenceHeadLabel">
+         <property name="text">
+          <string>Разница:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="DifferenceLabel">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QFrame" name="line_separator">
+     <property name="frameShape">
+      <enum>QFrame::Shape::HLine</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_reminder">
+     <property name="text">
+      <string>Напоминание</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="dynamicFieldsLayout"/>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="tgAuthLayout">
+     <item>
+      <widget class="QCheckBox" name="checkbox_tg">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Отправлять в tg bot</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_auth">
+       <property name="styleSheet">
+        <string>color: red;</string>
+       </property>
+       <property name="text">
+        <string>Авторизация: Не пройдена</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_auth">
+       <property name="styleSheet">
+        <string>text-decoration: underline; color: blue; background: none; border: none;</string>
+       </property>
+       <property name="text">
+        <string>Авторизоваться</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btn_confirm">
+     <property name="text">
+      <string>Подтверждение</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

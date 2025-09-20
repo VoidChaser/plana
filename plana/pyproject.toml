@@ -1,0 +1,5 @@
+[project]
+name = "PySide Widgets Project"
+
+[tool.pyside6-project]
+files = ["DialogNotificate.py", "dialognotification.cpp", "dialognotification.h", "dialognotification.ui", "form.ui", "mainwindow.py"]

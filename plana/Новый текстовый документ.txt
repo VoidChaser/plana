@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogPeriod</class>
+ <widget class="QDialog" name="DialogPeriod">
+  <property name="windowTitle"><string>Настройка периода</string></property>
+  <layout class="QVBoxLayout" name="verticalLayoutPeriod">
+   <item><widget class="QLabel" name="label_name"><property name="text"><string>Имя: [ ]</string></property></widget></item>
+   <item><widget class="QLabel" name="label_start"><property name="text"><string>Дата старта: [ ]</string></property></widget></item>
+   <item><widget class="QLabel" name="label_deadline"><property name="text"><string>Дата дедлайна: [ ]</string></property></widget></item>
+   <item><widget class="QLabel" name="label_diff"><property name="text"><string>Разница: 0 дней 0 часов 0 минут</string></property></widget></item>
+   <item><widget class="QFrame" name="line_separator"><property name="frameShape"><enum>QFrame::HLine</enum></property></widget></item>
+   <item><widget class="QLabel" name="label_reminder"><property name="text"><string>Напоминание</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget></item>
+   <item>
+    <layout class="QVBoxLayout" name="dynamicFieldsLayout">
+     <item>
+      <layout class="QHBoxLayout" name="fieldExample">
+       <item>
+        <widget class="QComboBox" name="combo_period">
+         <item><property name="text"><string>Год</string></property></item>
+         <item><property name="text"><string>Месяц</string></property></item>
+         <item><property name="text"><string>День</string></property></item>
+         <item><property name="text"><string>Минута</string></property></item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spin_value"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_add_field">
+       <property name="text"><string>+</string></property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+
+   <!-- Новый блок Telegram-авторизации -->
+   <item>
+    <layout class="QHBoxLayout" name="tgAuthLayout">
+     <item>
+      <widget class="QCheckBox" name="checkbox_tg">
+       <property name="text"><string>Отправлять в tg bot</string></property>
+       <property name="enabled"><bool>false</bool></property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_auth">
+       <property name="text"><string>Авторизация: Не пройдена</string></property>
+       <property name="styleSheet"><string>color: red;</string></property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_auth">
+       <property name="text"><string>Авторизоваться</string></property>
+       <property name="flat"><bool>true</bool></property>
+       <property name="styleSheet"><string>text-decoration: underline; color: blue; background: none; border: none;</string></property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+
+   <item>
+    <widget class="QPushButton" name="btn_confirm">
+     <property name="text"><string>Подтверждение</string></property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
